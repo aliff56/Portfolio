@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Asif - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="arabic-alif">الف</div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#contact" class="contact-link">Contact</a> <!-- New Contact button -->
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <div class="text-section">
+        <h1>Hi, I'm Ali Asif</h1>
+        <p>I am a passionate Flutter Developer, always eager to learn and grow.</p>
+        <a href="#about" class="btn">Learn More</a>
+        <a href="projects.html" class="btn">My Projects</a> <!-- Updated "My Projects" button to link to projects.html -->
+      </div>
+      <div class="image-section">
+        <img src="img.jpg" alt="Ali Asif">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>Hi, I’m Ali Asif, a software engineering student at SZABIST Islamabad. I am passionate about building mobile apps with Flutter. My journey in development has been a blend of both learning and experimenting with new technologies. I aim to combine my creativity and skills to build innovative, user-friendly applications. Currently, I am focused on expanding my knowledge in mobile app development and am eager to contribute to meaningful projects that create a positive impact.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>If you wish to get in touch, feel free to send an email to: <a href="mailto:aag44105@gmail.com">aag44105@gmail.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Ali Asif. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth Scroll JavaScript
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetElement = document.querySelector(this.getAttribute('href'));
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

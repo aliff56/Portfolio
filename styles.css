@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: #2c2c2c;
+    position: relative;
+    scroll-behavior: smooth; /* Add smooth scrolling effect */
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  header {
+    background: #1a1a1a;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .arabic-alif {
+    font-size: 2rem;
+    font-family: 'Amiri', serif; /* Elegant Arabic-style font */
+    color: #afafaf;
+  }
+  
+  header nav a {
+    margin: 0 15px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  header nav a:hover {
+    color: #f39c12;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url('wp12475273-dark-grey-4k-wallpapers.jpg') no-repeat center center/cover;
+  }
+  
+  .hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay to improve text visibility */
+    filter: blur(3px); /* Blur only the background */
+    z-index: 0;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 1; /* Ensure content is above the background */
+  }
+  
+  .text-section {
+    flex: 1;
+    margin-right: 2rem;
+  }
+  
+  .text-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .text-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+  
+  .text-section .btn {
+    display: inline-block;
+    background: #f1f1f1; /* Graysh white color */
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .text-section .btn:hover {
+    background: #ccc;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .image-section img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.8); /* Bottom-only shadow */
+    filter: drop-shadow(0px 5px 10px rgba(255, 255, 255, 0.8)); /* Bottom shadow */
+    transition: all 0.3s ease;
+  }
+  
+  .image-section img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* About Section */
+  .about-section {
+    background: #333;
+    padding: 3rem 1rem;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto; /* Centers the text */
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    max-width: 800px; /* Limits the width for a more readable line length */
+    margin: 0 auto; /* Centers the paragraphs */
+  }
+  /* Contact Section */
+.contact-section {
+    background: #333;
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-section a {
+    color: #f39c12;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .contact-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background: #1a1a1a;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
